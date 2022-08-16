@@ -347,6 +347,7 @@ footer {
     margin-right: 12px;
 
     background-color: rgba(255, 255, 255, 0);
+    color: var(--primary-text-color);
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -448,6 +449,8 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50% 50%;
 
+    transition: border 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
     cursor: pointer;
 }
 
@@ -527,6 +530,7 @@ footer {
     display: flex;
     margin-bottom: 30px;
     align-items: center;
+    justify-content: center;
 
     cursor: pointer;
 }
@@ -583,6 +587,7 @@ footer {
 }
 
 .form-field .comment {
+    resize: none;
     padding: 11px 16px;
 
     color: #000;
